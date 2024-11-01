@@ -52,6 +52,8 @@ nav {
   text-align: center;
   padding: 10px 0;
   font-family: "Lato", sans-serif;
+  position: sticky;
+  top: 0;
 }
 nav ul li {
   display: inline-block;
@@ -71,9 +73,8 @@ nav ul li a {
 /* our menu section */
 #our-menu,
 #about-us,
-#contact-us, 
-footer
- {
+#contact-us,
+footer {
   /* border: 2px solid black; */
   width: 90%;
   margin: 50px auto;
@@ -86,8 +87,8 @@ footer
   padding: 10px 0;
 }
 /* about-us section */
-#about-us p, 
-#contact-us p, 
+#about-us p,
+#contact-us p,
 footer p {
   padding: 10px 0;
   font-family: "Lato", sans-serif;
@@ -95,12 +96,68 @@ footer p {
   text-align: justify;
 }
 /* contact-us section*/
-#contact-us{
+#contact-us {
   font-family: "Lato", sans-serif;
+}
+
+/* card section */
+.card {
+  border: 2px solid black;
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffc;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  margin: 50px auto; 
+ 
+ 
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
 
 }
+.bp{
+  position: absolute;
+  bottom: -1010px;
+  width: 230px;
+}
+.card-img-top {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.card h4 {
+  padding-top: 5%;
+  font-size: 20px;
+}
+.card p {
+  line-height: 1.5;
+  padding-top: 5%;
+}
+.price {
+  font-weight: bold;
+  font-style: italic;
+}
+.card a {
+  background-color: #000;
+  color: #fff;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  border-radius: 8px;
+}
 /* footer section */
-footer p{
+footer p {
   text-align: center;
   font-size: 0.9em;
+}
+footer a{
+  color: #49281a;
+  font-size: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
